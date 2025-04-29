@@ -57,8 +57,6 @@ Em outro terminal, execute o script de implantação:
 ./deploy-on-local.sh
 ```
 
-> **Nota**: Substitua `<sua_chave_privada>` pela sua chave privada. Certifique-se de que esta chave possui fundos suficientes na rede local.
-
 ## 📁 Estrutura do Projeto
 
 - `src/`: Contém os contratos inteligentes escritos em Solidity.

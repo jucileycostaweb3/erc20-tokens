@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+[fmt]
+line_length = 100         # largura máxima da linha
+tab_width = 4             # espaços por tab
+bracket_spacing = true    # adiciona espaço dentro de colchetes em arrays/maps
+quote_style = "double"    # força aspas duplas
+
+
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

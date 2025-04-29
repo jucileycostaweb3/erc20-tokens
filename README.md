@@ -1,66 +1,75 @@
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# ✨ ERC20 Tokens com Foundry
 
-Foundry consists of:
+Bem-vindo ao repositório **ERC20 Tokens**, um projeto desenvolvido por [@jucileycostaweb3](https://github.com/jucileycostaweb3) que explora a criação e o gerenciamento de tokens ERC20 utilizando o poderoso toolkit [Foundry](https://book.getfoundry.sh/). Este projeto serve como uma base sólida para desenvolvedores que desejam entender e implementar contratos inteligentes de tokens fungíveis na blockchain Ethereum.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🚀 Sobre o Projeto
 
-## Documentation
+Este repositório demonstra como construir e implantar contratos inteligentes que seguem o padrão ERC20, utilizando as ferramentas oferecidas pelo Foundry:
 
-https://book.getfoundry.sh/
+- **Forge**: Framework de testes Ethereum.
+- **Cast**: Ferramenta para interagir com contratos inteligentes EVM.
+- **Anvil**: Nó local Ethereum para desenvolvimento e testes.
 
-## Usage
+## 🛠️ Pré-requisitos
 
-### Build
+Antes de começar, certifique-se de ter instalado:
 
-```shell
-$ forge build
+- [Foundry](https://book.getfoundry.sh/getting-started/installation)  
+- [Node.js](https://nodejs.org/)  
+- [Git](https://git-scm.com/)
+
+## 📦 Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/jucileycostaweb3/erc20-tokens.git
+cd erc20-tokens
+forge install
 ```
 
-### Test
+## ⚙️ Uso
 
-```shell
-$ forge test
+### Compilar os Contratos
+
+```bash
+forge build
 ```
 
-### Format
+### Formatar o Código
 
-```shell
-$ forge fmt
+```bash
+forge fmt
 ```
 
-### Gas Snapshots
+### Implantar na Rede Local
 
-```shell
-$ forge snapshot
+Inicie o nó local:
+
+```bash
+anvil
 ```
 
-### Anvil
+Em outro terminal, execute o script de implantação:
 
-```shell
-$ anvil
+```bash
+./deploy-on-local.sh
 ```
 
-### Deploy
+> **Nota**: Substitua `<sua_chave_privada>` pela sua chave privada. Certifique-se de que esta chave possui fundos suficientes na rede local.
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## 📁 Estrutura do Projeto
 
-### Cast
+- `src/`: Contém os contratos inteligentes escritos em Solidity.
+- `script/`: Scripts para implantação dos contratos.
+- `lib/`: Dependências externas utilizadas no projeto.
+- `.github/workflows/`: Configurações de integração contínua.
 
-```shell
-$ cast <subcommand>
-```
+## 🤝 Contribuindo
 
-### Help
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).

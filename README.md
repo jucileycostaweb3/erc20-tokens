@@ -54,7 +54,7 @@ anvil
 Em outro terminal, execute o script de implantação:
 
 ```bash
-./deploy-on-local.sh
+forge script script/deploy.local.s.sol:LocalScript --rpc-url $SEPOLIA_RPC_URL --account $MY_ACCOUNt --broadcast
 ```
 
 ## 📁 Estrutura do Projeto
